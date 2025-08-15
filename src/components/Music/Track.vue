@@ -14,7 +14,7 @@
     </div>
 
     <div class="info">
-      <iframe v-if="$localData.settings.bandcampEmbed && track.bandcampId" class="bandcamp" :key="track.directory" :src="`https://bandcamp.com/EmbeddedPlayer/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/track=${track.bandcampId}/transparent=true/`" seamless></iframe>
+      <iframe v-if="$localData.settings.bandcampEmbed && track.bandcampId" class="bandcamp" :key="track.directory" :src="`https://bandcamp.com/EmbeddedPlayer/size=large/bgcol=eeeeee/linkcol=0000ee/tracklist=false/artwork=none/track=${track.bandcampId}/transparent=true/`" seamless></iframe>
 
       <p class="links" v-if="linkAndJoinExternalMusic">Listen on <span v-html="linkAndJoinExternalMusic" /></p>
       
@@ -225,7 +225,7 @@ export default {
 
     .bandcamp {
       width: 100%; 
-      height: 42px;
+      height: 120px;
       background: #303030;
     }
 
